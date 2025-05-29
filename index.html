@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida "El Chepsito"</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #00e8ff;
+        }
+        
+        header {
+            background-color: #00ffe8;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #475056;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comida "El Chepsito"</h1>
+        <p>El mejor lugar para comer :).</p>
+    </header>
+    
+    <nav>
+        <li><a href="index.html">Inicio</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+            <li><a href="pedidos especiales.html">pedidos especiales</a></li>
+            <li><a href="formas de pago.html">formas de pago</a></li>
+    </nav>
+    
+    <div class="container">
+        <section id="inicio" class="section">
+            <h2>Bienvenidos a nuestro restaurante/fondita</h2>
+            <p>Somos tu mejor opción para poder llenar el paladar y el estomago :).</p>
+            <p>Entra por tu casa y descubre todo lo mejor que tenemos para ti.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <img src="https://i.pinimg.com/736x/89/e7/16/89e71652c856f661dea54ec4602cc530.jpg" alt="Banner promocional" style="max-width: 100%; border-radius: 5px;">
+            </div>
+        </section>
